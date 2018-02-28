@@ -1,5 +1,5 @@
 # ontap-lacp
-ONTAP load balancing algorithm writen for article in this blog
+SuperFastHash load balancing algorithm used in ONTAP 8 & 9, writen for article in this blog
 http://blog.sentrium.io/ethernet-port-aggregation-and-load-balancing-with-ontap
 
 
