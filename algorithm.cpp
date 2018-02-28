@@ -245,17 +245,20 @@ int removeDuplicates(int a[][4], int src_c, int ports)
 
 int main() {
     int src, src1, dst, st_ports, srv_ports, subnet, src_start, src_end, src_c, dst_start, dst_end, dst_c;
-    //Задаём количество сетевых интерфейсов
-    st_ports = 4;
-    srv_ports = 4;
-    subnet = 53; //Задаём третий октет IP адреса (в примере 52 и 53)
-    src_start = 21; // Задаём начальный отсчёт четверного октета destination IP адреса (в примере с 21 до 23)
-    src_end = 22;
-    src_c = src_end - src_start +1;
-    dst_start = 30; // Задаём начальный отсчёт четверного октета source IP адреса (в примере с 30 до 250)
-    dst_end = 250;
-    dst_c = dst_end - dst_start +1;
 
+//////////////////////////////////////////////////////////////////////////////
+ 
+    st_ports = 4; // number of ethernet ports to a storage node
+    srv_ports = 4; // number of ethernet ports to a server
+    subnet = 53; // IP 3rd octet XXX.XXX.53.XXX
+    src_start = 21; // Server's start IP 4th octet XXX.XXX.53.21
+    src_end = 22; // Server's end IP 4th octet XXX.XXX.53.22
+    dst_start = 30; // Start from storage node potential IP: XXX.XXX.53.30
+    dst_end = 250; // End storage node potential IP: XXX.XXX.53.250
+ 
+ //////////////////////////////////////////////////////////////////////////////
+    src_c = src_end - src_start +1;
+    dst_c = dst_end - dst_start +1;
     int in_out_collumns = 1+3*(src_c+1)+1;
     int in_out_rows = dst_c;
     int aggr_table [in_out_rows][in_out_collumns];
