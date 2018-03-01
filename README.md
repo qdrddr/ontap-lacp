@@ -17,7 +17,7 @@ You can modify next variables:
     dst_start = 30; // Start from storage node potential IP: XXX.XXX.53.30
     dst_end = 250; // End storage node potential IP: XXX.XXX.53.250
 
-SuperFastHash used for NTAP OUT - function balance_ip_netapp();
+SuperFastHash used for NTAP OUT - function balance_ip_netapp(); https://kb.netapp.com/app/answers/answer_view/a_id/1032252
 
 Ordinary XOR used for NTAP IN & Server IN&OUT - function balance_ip_lacp_xor();    
     
