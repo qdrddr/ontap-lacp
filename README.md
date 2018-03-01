@@ -4,6 +4,7 @@ SuperFastHash load balancing algorithm used in ONTAP 8 & 9, writen for article i
 http://blog.sentrium.io/ethernet-port-aggregation-and-load-balancing-with-ontap
 
 SuperFastHash user for NTAP out - function balance_ip_netapp();
+
 Ordinary XOR used for NTAP IN & Server IN&OUT - function balance_ip_lacp_xor();
 
 To compile the algorithm copy and paste algorithm.cpp file in tested online compiler 
