@@ -1,9 +1,11 @@
 # ontap-lacp
 SuperFastHash load balancing algorithm used in ONTAP 8 & 9, writen for article in this blog
+
 http://blog.sentrium.io/ethernet-port-aggregation-and-load-balancing-with-ontap
 
 
-To compile the algorithm run it in tested online compiler 
+To compile the algorithm copy and paste algorithm.cpp file in tested online compiler 
+
 http://www.tutorialspoint.com/compile_cpp11_online.php
 
 You can modify next variables:
