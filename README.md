@@ -18,5 +18,5 @@ You can modify next variables:
     dst_start = 30; // Start from storage node potential IP: XXX.XXX.53.30
     dst_end = 250; // End storage node potential IP: XXX.XXX.53.250
     
-Though I did my best to make it precice, I do not give any guarantees so you can use it AS IS, and you are welcome to contribute to this open-source code.  
+Though I did my best to make it precise, I do not give any guarantees, so you can use it AS IS, and you are welcome to contribute to this open-source code.  
     
