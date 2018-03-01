@@ -152,7 +152,7 @@ void head_lines (int src_start, int src_end)
     printf ("|Path");
     printf ("¦Totl¦\n");
     //   IP  | 21 | 22 | .. | PU | 21 | 22 | .. | PU | 21 | 22 | .. | PU | XX |
-    printf ("   IP  "); // | 21 | 22 | .. | PU | 21 | 22 | .. | PU | 21 | 22 | .. | PU | XX |\n");
+    printf ("Stor IP"); // | 21 | 22 | .. | PU | 21 | 22 | .. | PU | 21 | 22 | .. | PU | XX |\n");
     f_prnt_l_int (src_start, src_end);
     printf ("|Used");
     f_prnt_l_int (src_start, src_end);
