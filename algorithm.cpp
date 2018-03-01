@@ -42,7 +42,9 @@ void f_sum(int *r, int step, int i, int j) {
         printf("\t%i\n", r[step]);
     }
 }
- 
+
+// Function balance_ip_netapp() is a realization of NetApp's SuperFastHash algorithm
+// https://kb.netapp.com/app/answers/answer_view/a_id/1032252
 int balance_ip_netapp (int net, int src, int dst, int link_cnt) {
     int res[30];
     res[0] = net*256 + src;
