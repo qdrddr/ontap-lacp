@@ -17,9 +17,11 @@ You can modify next variables:
     dst_start = 30; // Start from storage node potential IP: XXX.XXX.53.30
     dst_end = 250; // End storage node potential IP: XXX.XXX.53.250
 
-SuperFastHash used for NTAP OUT - function balance_ip_netapp(); https://kb.netapp.com/app/answers/answer_view/a_id/1032252
 
-Ordinary XOR used for NTAP IN & Server IN&OUT - function balance_ip_lacp_xor();    
+In application's otput:
+SuperFastHash used for NTAP OUT column - function balance_ip_netapp(); https://kb.netapp.com/app/answers/answer_view/a_id/1032252
+
+Ordinary XOR used for NTAP IN & Server IN&OUT columns - function balance_ip_lacp_xor();    
     
 Though I did my best to make the algorithm to work precisely as in your storage system, switch and server, I do not give any guarantees, so you can use it AS IS, and you are welcome to contribute to this open-source code.  
     
