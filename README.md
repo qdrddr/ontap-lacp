@@ -25,5 +25,5 @@ Ordinary XOR used for NTAP IN & Server IN&OUT columns - function balance_ip_lacp
     
 Though I did my best to make the algorithm to work precisely as in your storage system, switch and server, I do not give any guarantees, so you can use it AS IS, and you are welcome to contribute to this open-source code.  
 
-To find the best IPv4 for your storage nodes in your environment just find the biggest number in column "SUM Totl Used". So if you need 4x IP addresses, in this example you'll be interested in XXX.XXX.53.32, XXX.XXX.53.43, XXX.XXX.53.49 & XXX.XXX.53.58.
+To find the best IPv4 for your storage nodes in your environment just find the biggest number in column "SUM Totl Used". In my example we need 4x IP addresses, so in this case you'll be interested in XXX.XXX.53.32, XXX.XXX.53.43, XXX.XXX.53.49 & XXX.XXX.53.58.
 See output example https://github.com/qdrddr/ontap-lacp/blob/master/Output_Example.txt
