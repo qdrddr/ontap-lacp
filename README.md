@@ -26,39 +26,4 @@ Ordinary XOR used for NTAP IN & Server IN&OUT columns - function balance_ip_lacp
 Though I did my best to make the algorithm to work precisely as in your storage system, switch and server, I do not give any guarantees, so you can use it AS IS, and you are welcome to contribute to this open-source code.  
 
 To find the best IPv4 for your storage nodes in your environment just find the biggest number in column "SUM Totl Used". So if you need 4x IP addresses, in this example you'll be interested in XXX.XXX.53.32, XXX.XXX.53.43, XXX.XXX.53.49 & XXX.XXX.53.58.
-Example of application output:
-
-       ¦NTAP       %  ¦NTAP       %  ¦Srv        %  ¦ SUM¦
-       ¦OUT      |Path¦IN       |Path¦IN&O     |Path¦Totl¦
-Stor IP¦  21|  22|Used¦  21|  22|Used¦  21|  22|Used¦Used¦
- 53.30 ¦   1|   0|  75|   3|   0|  75|   3|   0| 100|  83|
- 53.31 ¦   1|   1|  37|   2|   1|  62|   2|   1| 100|  66|
- 53.32 ¦   0|   3| 100|   1|   2| 100|   1|   2| 100| 100|
- 53.33 ¦   2|   3|  75|   0|   3|  75|   0|   3| 100|  83|
- 53.34 ¦   0|   1|  75|   3|   0|  75|   3|   0| 100|  83|
- 53.35 ¦   0|   2|  75|   2|   1|  75|   2|   1| 100|  83|
- 53.36 ¦   1|   2|  75|   1|   2|  75|   1|   2| 100|  83|
- 53.37 ¦   3|   2|  75|   0|   3|  75|   0|   3| 100|  83|
- 53.38 ¦   0|   2|  75|   3|   0|  75|   3|   0| 100|  83|
- 53.39 ¦   0|   1|  75|   2|   1|  75|   2|   1| 100|  83|
- 53.40 ¦   1|   0|  75|   1|   2|  75|   1|   2| 100|  83|
- 53.41 ¦   1|   0|  75|   0|   3|  75|   0|   3| 100|  83|
- 53.42 ¦   1|   0|  75|   3|   0|  75|   3|   0| 100|  83|
- 53.43 ¦   0|   3| 100|   2|   1| 100|   2|   1| 100| 100|
- 53.44 ¦   0|   2|  75|   1|   2|  75|   1|   2| 100|  83|
- 53.45 ¦   0|   1|  75|   0|   3|  75|   0|   3| 100|  83|
- 53.46 ¦   3|   3|  37|   3|   0|  62|   3|   0| 100|  66|
- 53.47 ¦   2|   0|  75|   2|   1|  75|   2|   1| 100|  83|
- 53.48 ¦   1|   0|  75|   1|   2|  75|   1|   2| 100|  83|
- 53.49 ¦   1|   2| 100|   0|   3| 100|   0|   3| 100| 100|
- 53.50 ¦   3|   2|  75|   3|   0|  75|   3|   0| 100|  83|
- 53.51 ¦   2|   0|  75|   2|   1|  75|   2|   1| 100|  83|
- 53.52 ¦   2|   3|  75|   1|   2|  75|   1|   2| 100|  83|
- 53.53 ¦   2|   2|  50|   0|   3|  75|   0|   3| 100|  75|
- 53.54 ¦   0|   3|  75|   3|   0|  75|   3|   0| 100|  83|
- 53.55 ¦   2|   1|  75|   2|   1|  75|   2|   1| 100|  83|
- 53.56 ¦   0|   2|  75|   1|   2|  75|   1|   2| 100|  83|
- 53.57 ¦   1|   1|  50|   0|   3|  75|   0|   3| 100|  75|
- 53.58 ¦   2|   1| 100|   3|   0| 100|   3|   0| 100| 100|
- 53.59 ¦   3|   3|  50|   2|   1|  75|   2|   1| 100|  75|
- 53.60 ¦   2|   3|  75|   1|   2|  75|   1|   2| 100|  83|
+Example https://github.com/qdrddr/ontap-lacp/blob/master/Output%20Example.txt
